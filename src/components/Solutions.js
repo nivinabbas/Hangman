@@ -1,12 +1,15 @@
-import React, {Component} from 'react';
+// import Letter from "./Letter";
+import { Component } from "react";
 
-class Solutions extends Component{
-    render(){
-        let underScore=["_","_","_","_"];
-        return(<div>
-           { underScore.map(u=><span> {u} </span>)}
-        </div>)
-    }
-
+class Solution extends Component {
+//   constructor() {
+//     super();
+//   }
+  solution() {
+    return this.props.solution();
+  }
+  render() {
+    return this.solution();
+  }
 }
-export default Solutions;
+export default Solution;
