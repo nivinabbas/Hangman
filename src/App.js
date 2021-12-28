@@ -47,7 +47,7 @@ export class App extends Component {
   }
 
   render() {
-    return this.state.score !== 0 ? (
+    return this.state.score > 0 ? (
       <div>
         <Score key={this.state.score} score={this.state.score} />
         <Solutions key={this.solution} solution={this.solution} />
